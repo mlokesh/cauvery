@@ -8,4 +8,5 @@ public class HelloWorld extends WebPage {
     public HelloWorld() {
         add(new Label("message", "Hello, World"));
     }
+
 }
