@@ -1,0 +1,42 @@
+<html xmlns:wicket="http://wicket.apache.org/">
+<head>
+    <title>Welcome to Wicket</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<h1>Welcome to Wicket</h1>
+<b><span wicket:id="message"></span></b>
+<br>
+<a href="#" wicket:id="link">Example Link</a>
+<span wicket:id="label">123</span> times
+<br>
+<a href="#" wicket:id="ajaxlink">Ajax Example</a>
+<span wicket:id="alabel">123</span> times
+
+<form wicket:id="inputForm" name="input form" action="">
+    <br>
+    <table>
+        <tr>
+            <td><label wicket:id="testCheckBoxLabel">[LABEL]</label></td>
+            <td><input type="checkbox" wicket:id="testCheckBox" /></td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <td><label>Enter URL</label></td>
+            <td><input type="text" wicket:id="urlText" size="75" /></td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" wicket:id="submitButton" value="Submit" />
+    <input type="submit" wicket:id="cancelLink" value="Cancel" />
+    <br>
+</form>
+<div wicket:id="feedback" class="error"></div>
+
+<span wicket:id="listview">
+   this label is: <span wicket:id="label">label</span><br/>
+</span>
+
+</body>
+</html>
