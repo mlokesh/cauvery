@@ -62,19 +62,16 @@ public class Home extends WebPage {
         employeeList.add(new Employee(2, "Test2"));
         employeeList.add(new Employee(3, "Test3"));
 
-
         final ListView<Employee> tables = new ListView<Employee>("tables", employeeList) {
-
             @Override
             protected void populateItem(ListItem<Employee> item) {
-
             }
-        }
+        };
     }
-
 
     private class SubmitButton extends Button {
         private static final long serialVersionUID = 105579730351611664L;
+
         SubmitButton(String name) {
             super(name);
         }
@@ -82,7 +79,7 @@ public class Home extends WebPage {
         @Override
         public void onSubmit() {
             logger.log(Level.INFO, urlText.getInput());
-            if(urlText.getModelObject() == null) {
+            if (urlText.getModelObject() == null) {
                 feedback.error("URL can't be null");
             }
         }
